@@ -1,0 +1,30 @@
+#hyakuninisshu {
+}
+.hy_tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.hy_tooltip .hy_tooltiptext {
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0;
+	visibility: hidden;
+	width: auto;
+	white-space: nowrap;
+	text-align: center;
+	color: black;
+}
+.hy_tooltip .hy_tooltiptext::after {
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	margin-left: -5px;
+	content: ' ';
+	border: 5px solid transparent;
+	border-top-color: black;
+}
+.hy_tooltip:hover .hy_tooltiptext {
+	visibility: visible;
+}

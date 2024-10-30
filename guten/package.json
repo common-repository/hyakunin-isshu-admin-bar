@@ -1,0 +1,20 @@
+{
+  "name": "hyakuninisshu",
+  "version": "1.0.2",
+  "description": "Hyakunin Isshu Admin Bar",
+  "main": "hyakuninisshu.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build:hyakuninisshu": "wp-scripts build src/hyakuninisshu --output-path=dist",
+    "lint-js": "wp-scripts lint-js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katsushi Kawamori",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "25.5.0"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^6.25.0"
+  }
+}
